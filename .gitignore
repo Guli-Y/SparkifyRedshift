@@ -1,0 +1,4 @@
+.ipynb_checkpoints
+__pycache__
+clusterconfig.ini
+setup_redshift_cluster.ipynb
