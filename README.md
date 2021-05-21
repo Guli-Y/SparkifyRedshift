@@ -1,12 +1,12 @@
 Sparkify is a startup company who provides music streaming services. They have JSON metadata on the songs in their app and user activity data in Amazon S3. The analytics team in Sparkify is interested in understanding what songs users are listening to. 
 
 
-## purpose
+## Purpose
 
 To build a ETL pipeline for extracting data from s3, stage them on Redshift and transform them into dimensional tables for song play analysis.
 
 
-## star schema design
+## Star schema design
 
 
 **Fact Table**
@@ -33,16 +33,19 @@ time
 - start_time (primary key), hour, day, week, month, year, weekday
 
 
-## how to use it 
+## Usage 
 
-STEP1: create a Redshift cluster and replace the params values in config.ini 
+1. Create a Redshift cluster and update config.ini with your own credentials
 
-STEP2: to create the needed tables in your Redshift database: python creat_tables.py 
+2. Create the tables in your Redshift database by running following command in your terminal
+  ```python creat_tables.py```
 
-STEP3: to stage, tranform and load the data to your Redshift database: python etl.py 
+3. Stage, tranform and load the data to your Redshift database by running following command
+  ```python etl.py```
 
-STEP4: to test whether the tables are loaded correctly: python test_tables.py
+4. Check whether the tables are loaded correctly by running following command
+  ```python test_tables.py```
 
 
-## note
+## Credits
 The codes are written by me and the sparkify data belongs to Udacity.
