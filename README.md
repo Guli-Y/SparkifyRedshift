@@ -38,12 +38,15 @@ time
 1. Create a Redshift cluster and update config.ini with your own credentials
 
 2. Create the tables in your Redshift database by running following command in your terminal
+
   ```python creat_tables.py```
 
 3. Stage, tranform and load the data to your Redshift database by running following command
+
   ```python etl.py```
 
 4. Check whether the tables are loaded correctly by running following command
+
   ```python test_tables.py```
 
 
